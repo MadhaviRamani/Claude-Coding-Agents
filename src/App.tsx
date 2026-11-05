@@ -22,7 +22,13 @@ export default function App() {
 
   return (
     <main>
-      <h1>Bookshelf</h1>
+      {/*
+        Show the total number of books next to the heading so readers can see
+        how big the shelf is at a glance. This uses `books` (the full list),
+        not `visibleBooks`, so the count stays the same while searching or
+        filtering by genre. It updates when a book is removed.
+      */}
+      <h1>Bookshelf ({books.length})</h1>
       <div className="controls">
         <label>
           Search
